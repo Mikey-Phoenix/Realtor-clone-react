@@ -6,7 +6,7 @@ export default function Header() {
     const Navigate = useNavigate()
     function pathMathRoute(route) {
         if (route === location.pathname) {
-            return true
+            return true;
         }
     }
   return (
@@ -17,9 +17,9 @@ export default function Header() {
             </div>
             <div>
                 <ul className='flex space-x-10'>
-                    <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute('/') && "text-black border-b-red-500"}`} onClick={()=>Navigate('/')}>Home</li>
-                    <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute('/offer') && "text-black border-b-red-500"}`} onClick={()=>Navigate('/offer')}>Offers</li>
-                    <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute('/sign-in') && "text-black border-b-red-500"}`} onClick={()=>Navigate('/sign-in')}>Sign In</li>
+                    <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute("/") && "text-black border-b-red-500"}`} onClick={()=>Navigate("/")}>Home</li>
+                    <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute("/offer") && "text-black border-b-red-500"}`} onClick={()=>Navigate("/offer")}>Offers</li>
+                    <li className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${pathMathRoute("/sign-in") && "text-black border-b-red-500"}`} onClick={()=>Navigate("/sign-in")}>Sign In</li>
                 </ul>
             </div>
         </header>
